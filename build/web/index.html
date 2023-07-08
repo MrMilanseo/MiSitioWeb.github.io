@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Practica 2 Boostrap">
+        <meta name="keywords" content="Boostrap">
+        <meta name="author" content="Armando Daniel Rodríguez Fajardo">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="style/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <img src="img/logo.png" alt="" height="90" width="120" />
+            <a class="navbar-brand" href="#" style="color: white">Gamer Shop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white"><i class="fa-solid fa-house" style="color: #ffffff;"></i>  Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">Acerca de Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Shooters</a></li>
+                  <li><a class="dropdown-item" href="#">Rol</a></li>
+                  <li><a class="dropdown-item" href="#">Aventura</a></li>
+                  <li><a class="dropdown-item" href="#">Carreras</a></li>
+                  <li><a class="dropdown-item" href="#">Peleas</a></li>
+                  <li><a class="dropdown-item" href="#">Musica</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Explorar Mas</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Que buscas?" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit"><i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i>Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="img/carusel-1.jpg" class="d-block w-100" height="800" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Tom Clancy's Rainbow Six: Siege</h5>
+                  <p>Tom Clancy's Rainbow Six: Siege es un videojuego de disparos táctico en línea desarrollado por Ubisoft Montreal 
+                      y distribuidor por Ubisoft.El juego pone mucho énfasis en la destrucción del entorno y en la cooperación entre 
+                      los jugadores. Cada jugador asume el control de un atacante o un defensor en diferentes modos de juego, como 
+                      rescatar a un rehén, desactivar una bomba y tomar el control de un objetivo dentro de una habitación. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="img/carusel-2.jpg" class="d-block w-100" height="800" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Assassin's creed valhalla</h5>
+                  <p>Assassin's Creed Valhalla es un videojuego desarrollado por Ubisoft Montreal y publicado por Ubisoft.<br>
+                  Ambientado en el siglo ix, el juego tiene lugar durante la invasión de Gran Bretaña por parte de los Vikingos, 
+                  con el jugador controlando al guerrero vikingo Eivor dirigiendo a su pueblo contra el rey sajón Alfredo el 
+                  Grande y sus reinos vasallos, a los que controla a través de una secta pagana llamada la Orden de los Antiguos, 
+                  y que pretende cristianizarla.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="img/carusel-3.jpg" class="d-block w-100" height="800" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Forza Horizon 5</h5>
+                  <p>Forza Horizon 5 es un videojuego de carreras multijugador en línea desarrollado por Playground Games y 
+                      publicado por Xbox Game Studios.Fue coronado al juego más esperado en los E3 2021 Awards, y contará con un 
+                      extenso mundo abierto por explorar, desde híbridos ecosistemas que van desde playas, ciénagas, cañones, 
+                      costas tropicales, todos con ambientación en México.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div style="background-color: #17202A; width: 100%; padding: 20px; text-align: center"> 
+            <h1 style="color: white"><i class="fa-solid fa-gamepad" style="color: #ffffff;"></i>  Mas Videojugos  <i class="fa-solid fa-gamepad" style="color: #ffffff;"></i></h1>
+        </div>
+        <div class="container">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        
+                        <div class="card" style="width: 18rem;height: 650px">
+                            <img src="img/mincraft.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Minecraft</h5>
+                              <p class="card-text">Minecraft es un juego de mundo abierto, y no 
+                                  tiene un fin claramente definido. Esto permite una gran libertad 
+                                  en cuanto a la elección de su forma de jugar. A pesar de ello, 
+                                  el juego posee un sistema que otorga logros por completar ciertas 
+                                  acciones.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Precio: $399</li>
+                              <li class="list-group-item">Categotia: Mundo Abierto</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="btn btn-info"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>  Comprar</a>
+                            </div>
+                          </div>
+                        
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" >
+                        
+                        <div class="card" style="width: 18rem; height: 650px">
+                            <img src="img/doom.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Doom Eternal</h5>
+                              <p class="card-text">Doom Eternal es un videojuego de acción y disparos 
+                                  en primera persona desarrollado por id Software y publicado por 
+                                  Bethesda Softworks.​ Es el quinto título principal de la serie Doom 
+                                  y la secuela directa de Doom (2016).​ </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Precio: $899</li>
+                              <li class="list-group-item">Categoria: Shooter</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="btn btn-info"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>  Comprar</a>
+                            </div>
+                          </div>
+                        
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        
+                        <div class="card" style="width: 18rem;height: 650px">
+                            <img src="img/spiderman.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Marvel's Spider-Man Remasterizado</h5>
+                              <p class="card-text">Este paquete imperdible incluye un código de descarga 
+                                  para Marvel's Spider-Man Remasterizado, el galardonado juego completo, 
+                                  con los tres capítulos de contenido descargable de la aventura Marvel's 
+                                  Spider-Man: La ciudad que nunca duerme, remasterizados y optimizados para 
+                                  la consola PS5.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Precio: $1200</li>
+                              <li class="list-group-item">Categoria: Accion</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="btn btn-info"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>  Comprar</a>
+                            </div>
+                          </div>
+                        
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" >
+                        
+                        <div class="card" style="width: 18rem;height: 650px">
+                            <img src="img/godofwar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">God of War: Ragnarök</h5>
+                              <p class="card-text">God of War Ragnarök es un videojuego de acción y 
+                                  aventuras. Es la novena entrega de la saga de God 
+                                  of War, la novena cronológicamente y la secuela de God of War de 2018. 
+                                  Basado libremente en la mitología nórdica, el juego se desarrolla en la 
+                                  antigua Escandinavia y presenta al protagonista de la serie Kratos y su 
+                                  hijo adolescente Atreus. </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Precio: $1300</li>
+                              <li class="list-group-item">Categoria: Aventura</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="btn btn-info"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>  Comprar</a>
+                            </div>
+                          </div>
+                        
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        
+                        <div class="card" style="width: 18rem;height: 650px">
+                            <img src="img/resident.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Resident Evil 4</h5>
+                              <p class="card-text">Resident Evil 4 es un videojuego de 
+                                  acción-aventura y disparos en tercera persona de 
+                                  estilo terror y supervivencia. El título es precedido por 
+                                  Resident Evil 3: Nemesis y se convierte en la cuarta entrega numérica 
+                                  de la serie y a su vez, el quinto juego dentro de la serie principal.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Precio: $1300</li>
+                              <li class="list-group-item">Categoria: Acción-aventura</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="btn btn-info"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>  Comprar</a>
+                            </div>
+                          </div>
+                        
+                  </div>
+                    
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        
+                        <div class="card" style="width: 18rem;height: 650px">
+                            <img src="img/mario.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Super Mario Odyssey</h5>
+                              <p class="card-text">Super Mario Odyssey es un videojuego de la serie Mario 
+                                  desarrollado por Nintendo EPD. Odyssey es un videojuego de plataformas 
+                                  en 3D con una jugabilidad similar a la de Super Mario 64 y Super Mario 
+                                  Sunshine, que te permite explorar libremente los mundos abiertos del juego.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Precio: $1000</li>
+                              <li class="list-group-item">Categoria: Plataformas</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="btn btn-info"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>  Comprar</a>
+                            </div>
+                          </div>
+                        
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #17202A; width: 100%; padding: 20px; text-align: center"> 
+            <h1 style="color: white"><i class="fa-solid fa-gamepad" style="color: #ffffff;"></i>  Consigue tus videojuegos  <i class="fa-solid fa-gamepad" style="color: #ffffff;"></i></h1>
+        </div>
+        <br>
+        <div class="container my-3" style="background: darkslategrey">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12" >
+                        <h1 style="color: white">Registrate</h1>
+                        <form style="color: white">
+                        <div class="mb-3">
+                            <label for="txtCorreo" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@example.com">
+                          </div>
+                        <div class="mb-3">
+                            <label for="txtPassword" class="form-label">Ingresa nueva contraseña</label>
+                            <input type="password" id="txtPassword" class="form-control">
+                          </div>
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Ingrese su UserName</label>
+                            <input type="text" class="form-control" id="usuario" placeholder="Nombre de Usuario">
+                          </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Ingrese su Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo">
+                          </div>
+                        <div class="mb-3">
+                            <label for="txtEdad" class="form-label">Ingrese su Edad</label>
+                            <input type="number" id="txtEdad" class="form-control" >
+                          </div>
+                        <div class="mb-3">
+                            <label for="chbTerminos1"> Terminos y condiciones </label><br><br>
+                            <input type="checkbox" id="chbTerminos1" name="chbTerminos">Acepto los terminos y condiciones de la pagina<br>
+                            <input type="checkbox" id="chbTerminos2" name="chbTerminos">Acepto recibir notificaciones de la pagina<br>
+                          </div>
+                        <button type="button" class="btn btn-info">Registrarse</button>
+                    </form>
+                  </div>
+                  <div class="col-md-2 col-sm-12">
+                        
+                      <p style="font-size: 32px; color: white">O</p>
+                        
+                  </div>
+                  <div class="col-md-5 col-sm-12">
+                        <h1 style="color: white">Iniciar_Sesion</h1>
+                        <form style="color: white">
+                        <div class="mb-3">
+                            <label for="txtCorreo" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@example.com">
+                          </div>
+                        <div class="mb-3">
+                            <label for="txtPassword" class="form-label">Ingresa tu contraseña</label>
+                            <input type="password" id="txtPassword" class="form-control">
+                          </div>
+                        <button type="button" class="btn btn-info">Iniciar Sesion</button>
+                    </form>
+                        
+                  </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <p style="text-align: center">Autor: Armando Daniel Rodríguez Fajardo <br> Grupo: 304</p>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/689a8428c3.js" crossorigin="anonymous"></script>
+    </body>
+</html>
